@@ -9,8 +9,6 @@
 获取一个 bot 实例。
 
 ```python
-from nonebot import get_bot
-
 @scheduler.scheduled_job("cron", hour=8, minute=0, second=0)
 async def send_message():
     bot = get_bot()
@@ -23,8 +21,6 @@ async def send_message():
 或者你也可以通过传入 `self_id`，获取指定 bot 实例。
 
 ```python
-from nonebot import get_bot
-
 @scheduler.scheduled_job("cron", hour=8, minute=0, second=0)
 async def send_message():
     # 获取 self_id 为 12345 的 bot 实例
@@ -38,8 +34,6 @@ async def send_message():
 获取所有连接 NoneBot 的 bot 实例。
 
 ```python
-from nonebot import get_bots
-
 @scheduler.scheduled_job("cron", hour=8, minute=0, second=0)
 async def send_message():
     # 获取 self_id 为 12345 的 bot 实例
@@ -57,7 +51,10 @@ async def send_message():
 每天早晨 8 点发送 `hello world!` 到群号 `10000`。
 
 ```python
-from nonebot import get_bot
+from nonebot import get_bot, require
+
+scheduler = require("nonebot_plugin_apscheduler").scheduler
+
 
 @scheduler.scheduled_job("cron", hour=8, minute=0, second=0)
 async def send_message():
@@ -66,4 +63,5 @@ async def send_message():
     # 发送消息，以 onebot 为例
     # API 详见 https://docs.go-cqhttp.org/api/#%E5%8F%91%E9%80%81%E6%B6%88%E6%81%AF
     await bot.send_msg(message_type="group", group_id=10000, message="hello world!")
+
 ```

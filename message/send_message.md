@@ -22,9 +22,12 @@ async def handle_hello(bot: Bot, event: Event, state: T_State):
 以下是一个完整的插件。
 
 ```python
+from nonebot.adapters import Bot, Event
 from nonebot.plugin import on_command
+from nonebot.typing import T_State
 
 matcher = on_command("hello")
+
 
 @matcher.handle()
 async def handle_hello(bot: Bot, event: Event, state: T_State):
@@ -32,4 +35,5 @@ async def handle_hello(bot: Bot, event: Event, state: T_State):
     await matcher.send("hello world!")
     # 或者通过 bot
     await bot.send(event, "hello world!")
+
 ```
