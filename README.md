@@ -4,9 +4,9 @@
 
 ## 消息
 
-- [发送消息](./message/send_message.md)
+- [发送消息](./docs/message/send_message.md)
 - 发送图片
-- [在定时任务中发送消息](./message/send_message_in_schedule.md)
+- [在定时任务中发送消息](./docs/message/send_message_in_schedule.md)
 
 ## 事件处理
 
