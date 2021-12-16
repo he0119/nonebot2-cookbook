@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "cookbook"
+version = "0.1.0"
+description = "cookbook"
+authors = []
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7.3"
+nonebot2 = "^2.0.0.a1"
+nonebot-adapter-cqhttp = "^2.0.0-alpha.16"
+nonebot-plugin-apscheduler = "^0.1.2"
+
+[tool.poetry.dev-dependencies]
+nb-cli = "^0.5.0"
+nonebot-plugin-test = "^0.3.0"
+black = "^21.12b0"
+isort = "^5.10.1"
+
+[nonebot.plugins]
+plugins = ["nonebot_plugin_test"]
+plugin_dirs = ["src/plugins"]
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
