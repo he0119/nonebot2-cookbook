@@ -44,7 +44,7 @@ async def send_message():
         await bot.send_group_msg(group_id=10000, message="hello world!")
 ```
 
-## 完整的例子
+## 示例
 
 以下是一个完整的插件。
 

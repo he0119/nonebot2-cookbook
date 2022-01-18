@@ -36,7 +36,7 @@ async def handle_picture():
     await matcher.finish(image)
 ```
 
-## 例子
+## 示例
 
 发送本地与网络图片。
 

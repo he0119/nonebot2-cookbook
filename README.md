@@ -20,7 +20,7 @@
 
 ## 测试
 
-- 测试命令
+- [测试命令](./docs/test/test_command.md)
 
 ## 部署
 

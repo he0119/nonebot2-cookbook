@@ -17,7 +17,7 @@ async def handle_hello(bot: Bot, event: Event, state: T_State):
 
 关于 `matcher` 的其他用法详见 [NoneBot 2 的不同事件处理/逻辑控制函数之间究竟有何区别？](https://github.com/nonebot/discussions/discussions/13#discussioncomment-1447083)
 
-## 完整的例子
+## 示例
 
 以下是一个完整的插件。
 
