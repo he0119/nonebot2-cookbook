@@ -15,7 +15,7 @@ async def send_message():
 
     # 发送消息，以 onebot 为例
     # API 详见 https://docs.go-cqhttp.org/api/#%E5%8F%91%E9%80%81%E6%B6%88%E6%81%AF
-    await bot.send_group_msg(group_id==10000, message="hello world!")
+    await bot.send_group_msg(group_id=10000, message="hello world!")
 ```
 
 或者你也可以通过传入 `self_id`，获取指定 bot 实例。
@@ -40,7 +40,7 @@ async def send_message():
     bots = get_bots()
 
     # 所有机器人都向群 ID 为 10000 的群发送消息
-    for bot in bots:
+    for bot in bots.values():
         await bot.send_group_msg(group_id=10000, message="hello world!")
 ```
 
