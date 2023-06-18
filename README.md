@@ -1,6 +1,6 @@
 # Cookbook
 
-这里将会介绍一些常见问题解法。每一个部分都是一个可以直接使用的插件，用来帮助理解 `NoneBot2`。文档中如无特别说明，均是以 [nonebot-adapter-onebot](https://github.com/nonebot/adapter-onebot) 为例。
+这里将会介绍一些常见问题解法。每一个部分都是一个可以直接使用的插件，用来帮助理解 _NoneBot2_。文档中如无特别说明，均是以 [nonebot-adapter-onebot](https://github.com/nonebot/adapter-onebot) 适配器中的 _OneBot V11_ 为例。
 
 ## 消息
 
