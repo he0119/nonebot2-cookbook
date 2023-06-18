@@ -9,9 +9,9 @@
 ## 安装依赖
 
 ```shell
-poetry add -D nonebug
+poetry add --group dev nonebug pytest-asyncio
 # 或者
-pip install nonebug
+pip install nonebug pytest-asyncio
 ```
 
 ## 创建测试文件

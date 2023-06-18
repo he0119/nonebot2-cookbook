@@ -1,14 +1,9 @@
-from typing import TYPE_CHECKING, Set
-
 import pytest
 from nonebug import App
 
-if TYPE_CHECKING:
-    from nonebot.plugin import Plugin
-
 
 @pytest.mark.asyncio
-async def test_send_message(app: App, load_plugin: Set["Plugin"]):
+async def test_send_message(app: App):
     from src.plugins.send_message import matcher
     from tests.utils import make_fake_event, make_fake_message
 
